@@ -1,0 +1,1 @@
+alert('Hello Lê Minh Hải')
