@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>   
+     try{
+      var a = 10;
+      var b = 0;
+      var result = a/ b;
+      throw {
+          code: 101,
+          message: "Error division"
+      };
+     }
+     catch(ex)
+     {
+        alert(ex);
+     }
+     finally{
+        console.log('finally block executed');
+     }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

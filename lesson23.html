@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strict mode</title>
+    <script>   
+        "use strict";
+        function foo(){
+            var x, y;
+
+            x = 1;
+            y = 2;
+         z = x + y;
+         console.log(z);
+         var obj = {
+             go: function(){
+                 console.log(this);
+             }
+         }
+         obj.go();
+        }
+        foo();
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

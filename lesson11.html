@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+      var emptyObj = {
+
+      }
+      var person = {
+        firstName: "John"
+      }
+
+      var messageObj = {
+        showMessage: function(val){
+          alert(val);
+        }
+      }
+
+      var person1 = {
+        firstName: "Jame",
+        lastName: "Bond",
+        age: 15,
+        getFullName: function(){
+          return this.firstName + ' ' + this.lastName
+        }
+      }
+      console.log(person1.getFullName());
+
+      person1.firstName = "CDG";
+      person1["lastName"] = "JavaScript";
+      console.log(person1.getFullName());
+      console.log(person1.firstName + ' ' + person1.lastName);
+
+      function changeReference(person1){
+        person1.firstName = "Jame 1";
+        person1.lastName = "Bond 1";
+      }
+
+      changeReference(person1);
+      console.log(person1.getFullName());
+
+
+      person1.address = {
+        phone: "456696877",
+        email: "65566",
+        street: "45632 hanoi"
+      }
+      console.log(person1.street);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

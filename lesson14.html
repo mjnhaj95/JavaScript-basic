@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>   
+      function ShowMessage(firstName, lastName){
+        alert('Hello ' + firstName + " " + lastName);
+      }
+      ShowMessage();
+      ShowMessage("CDG");
+      ShowMessage("CDG Online", "Tutorial");
+      ShowMessage("CDG online", "Tutorial", "aaaa");
+
+
+      // cal
+      function calculate(a,b){
+        function add(a,b){
+          return a + b;
+        }
+        return add;
+      }
+
+      var add = calculate(10,20);
+      console.log(add(10,20));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
