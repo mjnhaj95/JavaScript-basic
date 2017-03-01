@@ -1,11 +1,51 @@
- "use Strict";<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Strict mode</title>
     <script>   
-        
-       
+        // function Person(){
+        //     this.firstName = "unknown";
+        //     this.lastName = "unknown";
+        // }
+
+        // var person1 = new Person();
+        // person1.firstName  = "Lê";
+        // person1.lastName = "Minh";
+        // console.log(person1.firstName + ' '+ person1.lastName);
+
+        // var person2 = new Person();
+        // person2.firstName = "Minh";
+        // person2.lastName = "Hai";
+        // console.log(person2.firstName + ' '+ person2.lastName);
+
+        function Person_n(){
+            var _firstName = "unknown";
+            var _lastName  = "unknown";
+            Object.defineProperties(this,{
+                "FristName":{
+                    set: function(value){
+                        _firstName = value;
+                    },
+                    get: function(){
+                        return _firstName;
+                    }
+                },
+                "LastName":{
+                    set: function(value){
+                        _firstName = value;
+                    },
+                    get: function(){
+                        return _firstName;
+                    }
+                },
+            })
+        }
+
+        var person1 = new Person_n();
+        person1.firstName  = "Lê Minh Hai";
+        person1.lastName = "CDG";
+        console.log(person1.firstName + ' ' + person1.lastName);
     </script>
 </head>
 <body>

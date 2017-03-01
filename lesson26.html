@@ -2,10 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Strict mode</title>
+    <title>Object</title>
     <script>   
-        
-       
+         function Person(){
+             this.firstName = "";
+             this.lastName = "";
+             this.age = 0;
+         }
+
+         var person1 = new Person();
+         person1.firstName = "Lê Minh Hải";
+         person1.lastName = "CDG";
+        //  console.log(Object.keys(person1));
+        //  for(var prop in person1){
+        //      console.log(prop);
+        //  }
+
+        console.log(Object.getOwnPropertyDescriptor(person1, "firstName"));
+        Object.defineProperty(person1, "firstName", {
+            writable: false,
+            enumerable: false,
+        });
+        console.log(Object.getOwnPropertyDescriptor(person1, "firstName"));
     </script>
 </head>
 <body>

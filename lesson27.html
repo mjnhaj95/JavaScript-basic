@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Strict mode</title>
+    <title>This</title>
     <script>   
-        
+        var myVar = 100;
+
+        function WhoIsThis(){
+            var myVar = 200;
+            alert("Myvar = " + myVar);
+            alert("this.myVar = " + this.myVar);
+        } 
+
+        WhoIsThis();
+
        
     </script>
 </head>

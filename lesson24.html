@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <title>Hoisting</title>
     <script>   
-        
+        "use strict";
+        alert(x);
+        var x = 1;
+        function x(){
+            alert(2);
+        }
        
     </script>
 </head>

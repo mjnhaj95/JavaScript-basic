@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ khóa new và quá trình khởi tạo Obj</title>
+    <script>   
+       function myFunction(){
+        this.x = 100;
+       }
+
+       myFunction.prototype.y  = 200;
+       var Obj1 = new myFunction();
+       console.log(Obj1.x);
+       console.log(Obj1.y);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
