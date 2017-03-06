@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Closure</title>
+    <script>   
+        function OuterFunction(){
+            var outerVariable = 10;
+            function InnerFunction(){
+                console.log(outerVariable);
+            }
+
+            return InnerFunction();
+
+        }
+
+        OuterFunction();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

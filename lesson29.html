@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <title>Prototype</title>
     <script>   
+       function Person(){
+           this.name = "CDG";
+           this.gender = "M";
+
+       }
+
+       Person.prototype.age = 15;
+       var obj1 = new Person();
+       console.log(obj1.age);
+
+       var obj2 = new Person()
+       console.log(obj2.age);
        
     </script>
 </head>

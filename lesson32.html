@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intermediately Invoked Function</title>
+    <script>   
+        var userName = "CDG";
+
+        (function CallIIFE(name){
+            alert(name);
+        })(userName);
+
+         (function CallIIFE(name1){
+            alert(name1);
+        })(userName);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
